@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Brand</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+    html, body{
+      margin :0;
+      padding:0;
+    }
+    .row.content {height: 1500px}
+    /* Set gray background color and 100% height */
+    table td, th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+    .sidenavigate {
+      height: 100%;
+      background-color: #f1f1f1;
+      width: 20%;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}  
+    .box1, .box2, .box3, .box4 {
+    float: left;
+    width: 170px;
+    height: 140px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    box-shadow: 10px 10px 5px #888888;
+}
+.box3 h1{
+  color:green;
+}
+tr:nth-child(1) {
+    background: #DBDBEA;
+}
+
+.alignleft{
+  float:left;
+}
+.alignright{
+  float:right;
+  
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #DBDBEA;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px; 
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidenav form {
+    margin: 30px;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px; 
+    font-size: 36px;
+    margin-left: 50px; 
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+
+.clear{
+clear: both;
+}
+
+.wrap{
+  float: right;
+  
+}
+.button{
+  background-color: lightgrey;
+    border: none;
+    color: black;
+    float: right;
+    font-size: 16px;
+    text-decoration: bold;
+    cursor: pointer;
+    height: 26px;
+    width:160px;
+    
+}
+
+
+  </style>
+</head>
+<body>
+
+<header class="container-fluid" style="background-color: #000040 ; color: yellow; padding: 20px; text-align: left; font-weight: bold">
+  
+  <div >
+    <p style="float:left"> Brand </p>
+  <p style ="float: right">Username</p>
+  </div>
+
+</header>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenavigate">
+     </br>
+      <!-- Nav tabs -->
+      <ul class="nav nav-pills nav-stacked" role="tablist">
+        <li role="presentation" class="active"><a href="#Dashboard" aria-controls="Dashboard" role="tab" data-toggle="tab">Dashboard</a></li>
+        <li role="presentation"><a href="#Products" aria-controls="Products" role="tab" data-toggle="tab">Products</a></li>
+        <li role="presentation"><a href="#Inventory" aria-controls="Inventory" role="tab" data-toggle="tab">Inventory</a></li>
+        <li role="presentation"><a href="#Orders" aria-controls="Orders" role="tab" data-toggle="tab">Orders</a></li>
+      </ul>
+    </div>
+
+      <!-- Tab panes -->
+    <div class="col-sm-8">
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="Dashboard">
+          <div class="box1">
+            <h5 align="center">Orders<h5>
+              <h1> 2322 </h1>
+              <h5 >4000(Yesterday)<h5>
+
+          </div>
+          <div class="box2">
+            <h5 align="center">Net Sales<h5>
+              <h1> $1214777 </h1>
+              <h5 >$3211000(Yesterday)<h5>
+          </div>
+          <div class="box3">
+            <h5 align="center">Daily Volume<h5>
+              <h1 > UP 15% </h1>
+              <h5 style="color:red" >Down 2%(Yesterday)<h5>
+          </div>
+          <div class="box4">
+            <h5 align="center">Inventory Level<h5>
+              <h1 align = "center" style="color: green"> OK </h1>
+          </div>
+          <h3 style="clear: both;"><br><br> Curent Sales</h3>
+          
+              <table style="width:100%">
+                
+                  <tr>
+                    <th>Order#</th> 
+                    <th>Date</th>
+                     <th>Time</th>
+                     <th>Product</th>
+                     <th>Volume</th>
+                     <th>Vendor</th>
+                     <th>shipping address</th>
+                     <th>Shipping method</th>
+                     <th>Payment Info</th>
+                  </tr>
+                  <tr><td style="border-left: 1px solid #dddddd "></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd " ></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd "></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd "></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd "></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                </table>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="Products">
+          <h3>Products</h3>
+          <div class = "divtext">
+                                 
+             
+            <div class ="desc"></div>
+            
+
+          </div>
+          
+        </div>
+        <div role="tabpanel" class="tab-pane" id="Inventory">
+            <h3 class = "alignleft">Inventory</h3>
+                <form class = "alignright" >
+                  <br>
+                                <input type="text" placeholder="Search..." required>
+                                <input type="button" value="Go">
+                </form>
+                <p class=clear> </p>
+                <table style="width:100%">
+                
+                  <tr>
+                    <th>Item#</th> 
+                    <th>Product</th>
+                     <th>Order Volume</th>
+                     <th>Stock Available</th>
+                     <th>Level</th>
+                     
+                  </tr>
+                   <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                   
+                </table>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="Orders">
+
+            <h3 class = "alignleft">Orders</h3>
+            <br>
+                <div class="wrap">
+                  <!-- <button style="float: left; margin-right: 10px" class="button">+ Create new order</button> -->
+                   <form style="float: left" >
+                  
+                      <input type="text" placeholder="Search..." required>
+                      <input type="button" value="Go">
+                </form>
+                <p class=clear> </p>
+                </div>
+                <button style="cursor:pointer; margin-right : 10px" onclick="openNav()" class="button">+ Create new order</button>
+                <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">ProductId</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="ProductId">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Volume</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Volume">
+                      </div>
+                      <div class="form-group">
+                      <label for="exampleInputPassword1">Shipping address</label>  
+                      <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <button type ="submit" class=" btn btn-default " style="float:left">Order Now  </button>
+                        <a href="#" style="float:left"> Cancel</a>
+                        </div>
+                </form> 
+                </div>
+
+                 <table style="width:100%">
+                <br>
+                <br>
+                  <tr>
+                    <th>Order#</th> 
+                    <th>Date</th>
+                     <th>Time</th>
+                     <th>Product</th>
+                     <th>Volume</th>
+                     <th>Vendor</th>
+                     <th>shipping address</th>
+                     <th>Shipping method</th>
+                     <th>Payment Info</th>
+                  </tr>
+                    <tr><td style="border-left: 1px solid #dddddd "></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd " ></td></tr>
+                  <tr><td style="border-left: 1px solid #dddddd "></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd "></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                   <tr><td style="border-left: 1px solid #dddddd "></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="border-right: 1px solid #dddddd "></td></tr>
+                </table>
+
+
+        </div>
+      </div>
+  </div>
+
+</div>
+ <script>
+        $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+        $('#myTabs a:first').tab('show') // Select first tab
+        $('#myTabs a:last').tab('show') // Select last tab
+        $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
+</script> 
+<script src="/iflowsoft/brand/script.js"></script>
+
+</body>
+</html>
