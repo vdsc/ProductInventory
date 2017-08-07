@@ -1,2 +1,2 @@
 # ProductInventory
-![Alt text](vdsc/ProductInventory/product.PNG?raw=true "Optional Title")
+![dashboard](vdsc/ProductInventory/product.jpg?raw=true "Optional Title")
