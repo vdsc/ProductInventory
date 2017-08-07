@@ -1,2 +1,2 @@
 # ProductInventory
-![alt text](ProductInventory/productinventory.PNG)
+![alt text](vdsc/ProductInventory/productinventory.PNG)
