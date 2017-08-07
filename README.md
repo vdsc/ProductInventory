@@ -1,2 +1,2 @@
 # ProductInventory
-![alt text](http://url/to/productinventory.PNG)
+![alt text](ProductInventory/productinventory.PNG)
