@@ -1,3 +1,3 @@
 # ProductInventory
 
-<img src="contactlistapp.JPG" alt="product inventory
+<img src="product.JPG" alt="product inventory">
