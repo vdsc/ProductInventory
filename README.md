@@ -1,2 +1,3 @@
 # ProductInventory
-![alt tag]](/ProductInventory/product.JPG)
+
+<img src="contactlistapp.JPG" alt="product inventory
